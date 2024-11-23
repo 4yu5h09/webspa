@@ -1,5 +1,5 @@
 # 🏴‍☠️ Deadhook
-<h2 align="center">⚡ Really simple webhook spammer and deleter. Has a basic anti-ratelimit feature.</h3>
+<h2 align="center">⚡ Really simple webhook spammer.</h3>
 <h4 align="center">🌟 If you enjoy this, star this repository and drop a follow! Thanks 😊</h3>
 <br />
 <h2 align="left">- Features -</h3>
