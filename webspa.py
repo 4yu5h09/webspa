@@ -48,5 +48,5 @@ while done < times:
 requests.delete(webhook)
 print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] [-] \u001b[0m\u001b[33mThanks For Using Webspa\u001b[0m')
 os.system(f'title WebSpa - Deleted webhook after spamming {done} times!')
-print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Report: \u001b[0m\u001b[33mSpammed webhook "{hookName}" {times} times!\n\u001b[0m')
+print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Report: \u001b[0m\u001b[33mSpammed webhook "{hookName}" {times} times! [Webhook Deleted After Spamming]\n\u001b[0m')
 os.system('PAUSE >nul')
