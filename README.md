@@ -16,3 +16,5 @@
 **(YOU MUST HAVE PYTHON & REQUESTS MODULE INSTALLED!)**
 
 **Enjoy!** 😊
+
+**By Any Chance If You Don't Know How To Install REQUESTS, do pip install requests** {For Termux}
