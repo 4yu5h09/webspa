@@ -15,7 +15,7 @@ except:
     os._exit(0)
 
 os.system('title WebSpa - Enter webhook URL!')
-webhook = input('\u001b[0m\u001b[32;1m[\u001b[0m?\u001b[32;1m] To start, \u001b[0m\u001b[33menter the webhook! \u001b[0m>>>\u001b[33m ')
+webhook = input('\u001b[0m\u001b[32;1m[\u001b[0mWebSpa\u001b[32;1m] To start, \u001b[0m\u001b[33menter the webhook! \u001b[0m>>>\u001b[33m ')
 hookInfo = requests.get(webhook)
 if hookInfo.status_code == 401:
     print('\u001b[0m\u001b[31m[\u001b[0m-\u001b[31m] Failed! \u001b[33mInvalid webhook!')
@@ -24,7 +24,7 @@ if hookInfo.status_code == 401:
 
 hookName = hookInfo.json()['name']
 os.system('title WebSpa - Enter number of messages to be sent!')
-times = input('\u001b[0m\u001b[32;1m[\u001b[0m?\u001b[32;1m] (Enter a NUMBER) \u001b[0m\u001b[33mhow many times do you want to spam the webhook? \u001b[0m>>>\u001b[33m ') or 69
+times = input('\u001b[0m\u001b[32;1m[\u001b[0mWebSpa\u001b[32;1m] (Enter a NUMBER) \u001b[0m\u001b[33mhow many times do you want to spam the webhook? \u001b[0m>>>\u001b[33m ') or 69
 try:
     times = int(times)
 except:
@@ -32,7 +32,7 @@ except:
     times = 69
 
 os.system('title WebSpa - Ready')
-print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Ready! \u001b[0m\u001b[33mSpamming webhook "{hookName}" {times} times! (Press ENTER to begin)\n\u001b[0m')
+print(f'\u001b[0m\u001b[32;1m[\u001b[0mWebSpa\u001b[32;1m] Ready! \u001b[0m\u001b[33mSpamming webhook "{hookName}" {times} times!\n\u001b[0m')
 os.system('PAUSE >nul')
 while done < times:
     tempMsg = random.choice(messages.splitlines())
@@ -43,10 +43,10 @@ while done < times:
         time.sleep(w.json()['retry_after']/1000 + 1)
     else:
         os.system(f'title WebSpa - Spamming! (#{done})')
-        print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Success! \u001b[0m\u001b[33mSent message "{tempMsg}"! (#{done})\u001b[0m')
+        print(f'\u001b[0m\u001b[32;1m[\u001b[0mWebSpa\u001b[32;1m] Success! \u001b[0m\u001b[33mSent message "{tempMsg}"! (#{done})\u001b[0m')
         done += 1
 requests.delete(webhook)
-print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] [-] \u001b[0m\u001b[33mThanks For Using Webspa\u001b[0m')
+print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Thanks For Using WebSpa')
 os.system(f'title WebSpa - Deleted webhook after spamming {done} times!')
-print(f'\u001b[0m\u001b[32;1m[\u001b[0m+\u001b[32;1m] Report: \u001b[0m\u001b[33mSpammed webhook "{hookName}" {times} times! [Webhook Deleted After Spamming]\n\u001b[0m')
+print(f'\u001b[0m\u001b[32;1m[\u001b[0mWebSpa\u001b[32;1m] Report: \u001b[0m\u001b[33mSpammed webhook "{hookName}" {times} times! [Webhook Deleted After Spamming]\n\u001b[0m')
 os.system('PAUSE >nul')
